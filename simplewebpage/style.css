@@ -1,0 +1,144 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(/Users/whiting/Documents/stduy/htmlTest/images/wallhaven-d6dvmg_2560x1600.png);
+    background-size: cover;
+}
+h1 a{
+    font-size: larger;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none; /* 取消下划线 */
+    color: #ffffff;
+    font-weight: bold;
+}
+#Home h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(212, 231, 236);
+    font-style: italic;
+    font-size: 55px;
+    text-align: center; /* 文本水平居中 */
+    display: flex;
+    justify-content: center; /* 水平方向上的内容居中 */
+    align-items: center; /* 垂直方向上的内容居中 */
+    height: 60vh; /* 设置高度以垂直居中 */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+ /* 导航栏位置 */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 10px;
+}
+/* 清除下划线 */
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* 横向排列 */
+.main li {
+    display: inline;
+    margin-right: 20px;
+}
+/* 链接样式 */
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+/* 下拉位置 */
+.dropdown {
+    position: absolute;
+    left: 0;
+}
+/* 下拉样式 */
+.dropdown {
+    display: inline;
+    position: absolute;
+    top: 100%;
+    vertical-align: auto;
+    left: 0;
+    background-color: #d7d7d700;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+/* 鼠标悬停 */
+.navbar nav ul li:hover .dropdown {
+    display: block;
+    opacity: 1; /* 悬停时显示并淡入 */
+    /* transition-delay: 0.1s; 延迟淡出 */
+    
+}
+.dropdown li{
+    /* display: inline; */
+    margin-right: 20px;
+    margin: 0;
+    padding: 5px; /* 调整下拉菜单项的内边距 */
+    border-bottom: 1px solid #ccc; /* 添加底边框分隔线 */
+}
+.dropdown li {
+    /* display: table-header-group; */
+    display: list-item;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bdbcbc; /* 导航栏背景颜色 */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 导航链接样式 */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/*  */
+.navbar li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff; /* 导航链接文字颜色 */
+    text-decoration: none;
+}
+.navbar li:hover > ul {
+    display: block; /* 鼠标悬停时显示下拉菜单 */
+}
+
+.navbar ul ul li {
+    width: 200px; /* 下拉菜单宽度 */
+}
+
+.navbar ul ul a {
+    padding: 10px;
+}
+
+/* 鼠标悬停时改变链接颜色 */
+.navbar li:hover > a {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.about {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(151, 164, 197);
+}
+
